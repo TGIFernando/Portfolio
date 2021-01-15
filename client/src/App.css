@@ -1,0 +1,60 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+*{max-width: 100%;
+box-sizing:border-box;
+}
+
+html{font-size:62.5%;}
+/* Reset */
+
+/* Home Styles */
+div.name{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #776885;
+}
+h1.fern{
+    font-size: 10rem;
+    color: #F3E8EE;
+}
+h2.hello{
+    color:#A0AFBA;
+    font-size: 6rem;
+}
+h2.stack{
+    color:#A0AFBA;
+    font-size: 5rem; 
+    margin-bottom: 5rem;
+}
+h2.carrot{
+font-size: 10rem;
+}
+div.carrot{
+    height: 10vh;
+    background-color: #776885;
+    text-align: center;
+}
+/* Home Styles */
