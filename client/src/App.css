@@ -27,13 +27,34 @@ box-sizing:border-box;
 html{font-size:62.5%;}
 /* Reset */
 
+/* Snapping effect */
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+div .App{
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.snap{
+    scroll-snap-align: center;
+}
+
+/* Snapping effect */
+
 /* Home Styles */
 div.name{
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     background-color: #776885;
 }
 h1.fern{
@@ -58,3 +79,19 @@ div.carrot{
     text-align: center;
 }
 /* Home Styles */
+
+/* About Page Styles */
+
+.aboutMain{
+    height: 100vh;
+    background-color: #5C6D70;
+}
+
+.proj{
+    text-align: center;
+    font-size: 5rem;
+    color: #6A0F6B;
+}
+
+
+/* About Page Styles */
