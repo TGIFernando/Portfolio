@@ -3,9 +3,9 @@ import {Img, ProjDiv, Explain, ProjDiv2, A} from "../styles/ProjectsStyles"
 
 function ProjectContainer(props) {
     return (
-        <ProjDiv2 >
+        <ProjDiv2 className="hoverR">
             <A target="_blank" href={props.link}>
-                <ProjDiv className="hoverR">
+                <ProjDiv >
                     <Img src={props.image}/>
                     <Explain>{props.explain}</Explain>
                 </ProjDiv>
