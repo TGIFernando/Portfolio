@@ -47,3 +47,10 @@ div .App{
 }
 
 /* Snapping effect */
+
+/* Hover effect */
+.hoverR:hover{
+    opacity:50%;
+    transition:.3s;
+}
+/* Hover effect */
