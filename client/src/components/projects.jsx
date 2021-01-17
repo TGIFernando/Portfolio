@@ -1,9 +1,12 @@
+import { MainDiv, Proj } from "../styles/ProjectsStyles"
+
+
 function Projects(){
 
     return(
-        <div className="aboutMain">
-            <h1 className="proj">Projects</h1>
-        </div>
+        <MainDiv className="aboutMain snap" id="projects">
+            <Proj className="proj">Projects</Proj>
+        </MainDiv>
     )
 }
 
