@@ -12,20 +12,22 @@ top: 0;
 right: 0;
 height: 100vh;
 width: 50vw;
-background-color: #2176FF;
+background-color: #687F90;
 transform: ${({open}) => open ? "translateX(0)" : "translateX(100%)"};
 transition: 0.3s ease-in-out;
 `
 
 const LI = styled.li`
-padding: 10px;
-font-size: 5rem;
-color: white;
-
-a{
-    text-decoration: none;
+    padding: 10px;
+    font-size: 10rem;
     color: white;
-}
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    @media (max-width: 375px){
+        font-size: 4rem;
+    }
 `
 
 function NavBar({ open }) {

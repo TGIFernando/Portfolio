@@ -7,7 +7,7 @@ function Home(){
 
     return(
         <MainDiv className="snap" id="home">
-            <Hello>Hello, I'm</Hello>
+            <Hello>🚀Hello, I'm🚀</Hello>
             <Name>Fernando Chavez</Name>
             <Stack>A Full Stack Web Developer</Stack>
         </MainDiv>

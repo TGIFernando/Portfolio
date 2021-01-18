@@ -15,8 +15,8 @@ function Projects(){
     const l3 = "https://frontend-olive-nine.vercel.app/"
     const l4 = "https://tgiflyricfinder.netlify.app/"
     return(
-        <MainDiv className="aboutMain snap" id="projects">
-            <Proj className="proj">Projects</Proj>
+        <MainDiv className="aboutMain" id="projects">
+            <Proj className="proj snap">Projects</Proj>
             <FlexyDiv>
                 <ProjectContainer link={l1} explain={e1} image={image}/>
                 <ProjectContainer link={l2} explain={e2} image={image2}/>

@@ -36,14 +36,13 @@ html, body {
 
 div .App{
     height: 100vh;
-    scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
 }
 
 .snap{
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 /* Snapping effect */
