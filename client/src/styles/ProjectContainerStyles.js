@@ -6,9 +6,6 @@ const A = styled.a`
 
 const Img = styled.img`
     height:45rem;
-    @media (max-width: 1920px){
-        height: 30rem;
-    }
 `
 const ProjDiv = styled.div`
     background-color: #0F1E2F;
@@ -22,11 +19,11 @@ const ProjDiv2 = styled.div`
     @media (max-width: 1920px){
         width: 30%;
     }
-    @media (max-width: 1920px){
-        width: 40%;
-    }
     @media (max-width: 768px){
         width:45%
+    }
+    @media (max-width: 412px){
+        width:80%
     }
     @media (max-width: 375px){
         width: 75%;

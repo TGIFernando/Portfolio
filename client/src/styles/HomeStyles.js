@@ -17,6 +17,9 @@ const Name = styled.h1`
     @media (max-width: 768px){
     font-size: 8rem;
     }
+    @media (max-width: 412px){
+    font-size: 5rem;
+    }
     @media (max-width: 375px){
     font-size: 5rem;
     }
@@ -30,6 +33,9 @@ const Hello = styled.h2`
     }
     @media (max-width: 768px){
     font-size: 6rem;
+    }
+    @media (max-width: 412px){
+    font-size: 4rem;
     }
     @media (max-width: 375px){
     font-size: 4rem;
@@ -45,6 +51,9 @@ const Stack = styled.h2`
     }
     @media (max-width: 768px){
     font-size: 5rem;
+    }
+    @media (max-width: 412px){
+    font-size: 3rem;
     }
     @media (max-width: 375px){
     font-size: 3rem;

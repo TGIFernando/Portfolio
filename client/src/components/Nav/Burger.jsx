@@ -10,6 +10,10 @@ const StyledBurger = styled.div`
     top: 15px;
     right:2.5rem;
     z-index:1;
+    @media (max-width: 412px){
+        height: 1rem;
+        width: 4.6rem;
+    }
     @media (max-width: 375px){
         height: 1rem;
         width: 4.5rem;
@@ -23,6 +27,10 @@ div{
     transform-origin: 0;
     margin: 5px;
     transition: all 0.3s linear;
+    @media (max-width: 412px){
+    width:10rem;
+    height:.5rem;
+    }
     @media (max-width: 375px){
     width:10rem;
     height:.5rem;

@@ -25,6 +25,9 @@ const LI = styled.li`
         text-decoration: none;
         color: white;
     }
+    @media (max-width: 412px){
+    font-size: 4rem;
+    }
     @media (max-width: 375px){
         font-size: 4rem;
     }
