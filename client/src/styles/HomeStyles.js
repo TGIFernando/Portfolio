@@ -30,6 +30,12 @@ const Hello = styled.h2`
     }
 `
 
+const A = styled.a`
+    text-decoration: none;
+    color: #F3E8EE;
+    cursor: vertical-text;
+`
+
 const Stack = styled.h2`
     color:#A0AFBA;
     font-size: 3.5rem;
@@ -46,5 +52,6 @@ export {
     MainDiv,
     Name,
     Hello,
-    Stack
+    Stack,
+    A,
 }
