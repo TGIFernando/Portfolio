@@ -3,7 +3,7 @@ import {Img, ProjDiv, Explain, ProjDiv2, A} from "../styles/ProjectContainerStyl
 
 function ProjectContainer(props) {
     return (
-        <ProjDiv2 className="hoverR">
+        <ProjDiv2>
             <A target="_blank" href={props.link}>
                 <ProjDiv>
                     <Img src={props.image}/>
