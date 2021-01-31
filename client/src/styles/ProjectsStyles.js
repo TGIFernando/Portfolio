@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const MainDiv = styled.div`
     background-color: #5C6D70;
+    padding-bottom:2rem;
 `
 const Proj = styled.h1`
     text-align: center;
