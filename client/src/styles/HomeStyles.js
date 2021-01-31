@@ -9,55 +9,19 @@ const MainDiv = styled.div`
     background-color: #776885;
 `
 const Name = styled.h1`
-    font-size: 13rem;
+    font-size: 3.5rem;
     color: #F3E8EE;
-    @media (max-width: 1024px){
-    font-size: 10rem;
-    }
-    @media (max-width: 768px){
-    font-size: 8rem;
-    }
-    @media (max-width: 412px){
-    font-size: 5rem;
-    }
-    @media (max-width: 375px){
-    font-size: 5rem;
-    }
 `
 
 const Hello = styled.h2`
     color:#A0AFBA;
-    font-size: 11rem;
-    @media (max-width: 1024px){
-    font-size: 8rem;
-    }
-    @media (max-width: 768px){
-    font-size: 6rem;
-    }
-    @media (max-width: 412px){
     font-size: 4rem;
-    }
-    @media (max-width: 375px){
-    font-size: 4rem;
-    }
 `
 
 const Stack = styled.h2`
     color:#A0AFBA;
-    font-size: 10rem; 
-    margin-bottom: 5rem;
-    @media (max-width: 1024px){
-    font-size: 7rem;
-    }
-    @media (max-width: 768px){
-    font-size: 5rem;
-    }
-    @media (max-width: 412px){
-    font-size: 3rem;
-    }
-    @media (max-width: 375px){
-    font-size: 3rem;
-    }
+    font-size: 3.5rem;
+    text-align: center;
 `
 
 export {
