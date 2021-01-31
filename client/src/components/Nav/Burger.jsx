@@ -10,6 +10,10 @@ const StyledBurger = styled.div`
     top: 15px;
     right:2.5rem;
     z-index:1;
+    @media (min-width: 768px){
+        height: 4rem;
+        width:6.1rem;
+    }
 
 div{
     width:10rem;
@@ -19,6 +23,9 @@ div{
     transform-origin: 0;
     margin: 5px;
     transition: all 0.3s linear;
+    @media (min-width: 768px){
+        height:.8rem;
+    }
 
     &:nth-child(1){
         transform: ${({open}) => open ? "rotate(25.5deg)" : "rotate(0)"}

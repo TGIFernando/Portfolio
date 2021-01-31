@@ -25,6 +25,9 @@ const LI = styled.li`
         text-decoration: none;
         color: white;
     }
+    @media (min-width: 768px){
+     font-size:8rem;   
+    }
 `
 
 function NavBar({ open }) {
