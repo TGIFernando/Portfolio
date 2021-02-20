@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import {Link, useHistory} from "react-router-dom"
 
 const OL = styled.ol`
 list-style: none;
@@ -30,12 +31,23 @@ const LI = styled.li`
     }
 `
 
-function NavBar({ open }) {
+function NavBar({ open, logg }) {
+    const {push} = useHistory()
+
+    const logOut = e => {
+        e.preventDefault()
+        localStorage.removeItem("token")
+        localStorage.removeItem("id")
+        push("/login")
+      }
+
     return (
         <nav>
             <OL open={open}>
-                <LI><a href="#home">Home</a></LI>
-                <LI><a href="#projects">Projects</a></LI>
+                <LI><Link to="/">Home</Link></LI>
+                {logg ? <></> : <LI><Link to="/login">Login</Link></LI>}
+                {logg ? <LI><Link to="/" onClick={logOut}>Log Out</Link></LI> :  <LI></LI>}
+                {logg ? <LI><Link to="/contactme">Contact</Link></LI> : <></>}
             </OL>
         </nav>
     )

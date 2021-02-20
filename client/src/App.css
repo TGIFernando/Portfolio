@@ -42,7 +42,7 @@ div .App{
 }
 
 .snap{
-    scroll-snap-align: start;
+    scroll-snap-align: start end;
 }
 
 /* Snapping effect */

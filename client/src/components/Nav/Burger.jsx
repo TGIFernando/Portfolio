@@ -39,7 +39,7 @@ div{
     }
 }`
 
-function Burger() {
+function Burger({logg}) {
     const [open, setOpen] = useState(false)
 
     return (
@@ -49,7 +49,7 @@ function Burger() {
                 <div></div>
                 <div></div>
             </StyledBurger>
-            <NavBar open={open}/>
+            <NavBar open={open} logg={logg}/>
         </>
     )
 }
