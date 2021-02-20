@@ -36,7 +36,7 @@ function ContactForm() {
             <br/>
             <DIV>
                 <Label htmlFor="name">Full Name</Label>
-                <Input name="name" placeholder="John Smith" ref={register({required: true, minLength: 2})}/>
+                <Input name="name" placeholder="Fernando Chavez" ref={register({required: true, minLength: 2})}/>
                 {/* {errors.name && (<P>Looks like there was an error: {errors.name.type}</P>)} */}
             </DIV>
             <br/>
