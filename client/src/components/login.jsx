@@ -21,7 +21,7 @@ function Login() {
     const onSubmit = e => {
         e.preventDefault()
         console.log(form)
-        axios.post("http://localhost:8000/api/auth/login", form)
+        axios.post("https://tgif-portfolio.herokuapp.com/api/auth/login", form)
             .then(res => {
                 console.log(res.data)
                 localStorage.setItem("token", res.data.token)

@@ -14,7 +14,7 @@ function ContactForm() {
         mode: "onBlur"
     })
 
-    const url = 'http://localhost:8000/api/contact'
+    const url = 'https://tgif-portfolio.herokuapp.com/api/contact'
 
     const onSubmit = (data) => {
         axios.post(`${url}`, data)
