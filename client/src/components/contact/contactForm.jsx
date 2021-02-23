@@ -8,21 +8,19 @@ import linkedin from "./pics/61109.png"
 import github from "./pics/githubLogo.png"
 
 function ContactForm() {
-    const [send, setSend] = useState()
     const [fin, setFin] = useState(false)
     const { register, handleSubmit, errors } = useForm({
         mode: "onBlur"
     })
 
     const url = 'https://tgif-portfolio.herokuapp.com/api/contact'
+    // const urlLocal = "http://localhost:8000/api/contact/"
 
     const onSubmit = (data) => {
         axios.post(`${url}`, data)
-            .then(res => {
+            .then(_ => {
                 setFin(true)
-                console.log(fin)
-                setSend(res)
-                console.log(send)
+
             }).catch(err => {
                 console.log(err)
             })

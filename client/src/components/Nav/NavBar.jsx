@@ -31,7 +31,7 @@ const LI = styled.li`
     }
 `
 
-function NavBar({ open, logg }) {
+function NavBar({ open, logg, setOpen }) {
     const {push} = useHistory()
 
     const logOut = e => {
@@ -41,13 +41,19 @@ function NavBar({ open, logg }) {
         push("/login")
       }
 
+    const onClick = () => {
+        setOpen(!open)
+    }
+
     return (
         <nav>
             <OL open={open}>
-                <LI><Link to="/">Home</Link></LI>
-                {logg ? <></> : <LI><Link to="/login">Login</Link></LI>}
-                {logg ? <LI><Link to="/" onClick={logOut}>Log Out</Link></LI> :  <LI></LI>}
-                {logg ? <LI><Link to="/contactme">Contact</Link></LI> : <></>}
+                <LI onClick={onClick}><a href="#home">Home</a></LI>
+                {/* {logg ? <></> : <LI><Link to="/login">Login</Link></LI>} */}
+                <LI onClick={onClick}><a href="#projects">Projects</a></LI>
+                <LI onClick={onClick}><a href="#contact">Contact</a></LI>
+                {logg ? <LI onClick={onClick}><Link to="/" onClick={logOut}>Log Out</Link></LI> :  <LI></LI>}
+                {logg ? <LI onClick={onClick}><Link to="/contactme">Contact</Link></LI> : <></>}
             </OL>
         </nav>
     )

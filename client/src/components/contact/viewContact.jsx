@@ -17,7 +17,7 @@ function ViewContact() {
             }).catch(error => {
                 console.log(error.message)
             })
-    }, [])
+    }, [data])
 
     return (
         <MainDiv>

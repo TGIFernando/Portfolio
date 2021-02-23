@@ -5,10 +5,11 @@ const MainForm = styled.form`
     /* justify-content:center; */
     align-items: center;
     flex-direction:column;
-    background-color: #177E89;
+    background-color: #157e8a;
     height: 90vh;
-    width: 80vw;
+    width: 85vw;
     padding: 1rem;
+    border-radius: 20px;
 `
 
 const DIV = styled.div`
@@ -39,12 +40,14 @@ const Input = styled.input`
     width: 75vw;
     height: 2.5rem;
     border-color: #177E89;
+    border-style: none;
 `
 
 const Text = styled.textarea`
     width: 75vw;
     height: 6rem;
     border-radius: 5px;
+    border-style: none;
 `
 
 const Button = styled.input `
@@ -64,7 +67,7 @@ const PopUpDiv = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
+    width: 100vw;
     height: 50vh;
     font-size:3rem;
     text-align: center;

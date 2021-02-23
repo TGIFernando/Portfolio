@@ -33,7 +33,7 @@ const Hello = styled.h2`
 const A = styled.a`
     text-decoration: none;
     color: #F3E8EE;
-    cursor: vertical-text;
+    cursor: pointer;
 `
 
 const Stack = styled.h2`
@@ -48,10 +48,22 @@ const Stack = styled.h2`
     }
 `
 
+const Button = styled.h1`
+    background-color: #3d7ba9;
+    padding: .5rem;
+    font-size:3rem;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px;
+    &:active{
+        box-shadow: inset 2px 5px 5px;
+    }
+`
+
 export {
     MainDiv,
     Name,
     Hello,
     Stack,
     A,
+    Button,
 }

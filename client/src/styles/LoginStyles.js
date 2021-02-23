@@ -6,6 +6,7 @@ const MainDiv = styled.div`
     align-items: center;
     height: 100vh;
     background-color: #177E89;
+    flex-direction: column;
 `
 
 const Form = styled.form`
@@ -14,8 +15,11 @@ const Form = styled.form`
     justify-content: center;
     align-items: center;
 `
-
+const H1 = styled.h1`
+    font-size: 5rem;
+`
 export {
     MainDiv,
-    Form
+    Form,
+    H1
 }

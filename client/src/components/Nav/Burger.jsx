@@ -49,7 +49,7 @@ function Burger({logg}) {
                 <div></div>
                 <div></div>
             </StyledBurger>
-            <NavBar open={open} logg={logg}/>
+            <NavBar open={open} logg={logg} setOpen={setOpen}/>
         </>
     )
 }

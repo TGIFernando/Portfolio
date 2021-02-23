@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import axios from "axios"
-import { MainDiv, Form} from "../styles/LoginStyles"
+import { MainDiv, Form, H1} from "../styles/LoginStyles"
 import { useHistory } from "react-router-dom"
 
 const val = {
@@ -34,13 +34,17 @@ function Login() {
 
     return (
         <MainDiv>
+            <H1>ADMIN PAGE</H1>
             <Form onSubmit={onSubmit}>
                 <label>Username</label>
                 <input name="username" onChange={onChange}/>
                 <label>Password</label>
-                <input type="" name="password" onChange={onChange}/>
+                <input type="password" name="password" onChange={onChange}/>
                 <br/>
                 <input type="submit"/>
+                <br/>
+                <br/>
+                <button><a href="/">Home</a></button>
             </Form>
         </MainDiv>
     )
