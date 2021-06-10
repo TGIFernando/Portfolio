@@ -1,15 +1,11 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const MainDiv = styled.div`
-    height: 100vh;
-    background-color: #a75caf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
+  height: 100vh;
+  background-color: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-
-
-export {
-    MainDiv,
-}
+export { MainDiv };

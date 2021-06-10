@@ -2,6 +2,7 @@ import {MainDiv, Name, Hello, Stack, A, Button} from "../styles/HomeStyles"
 import {useHistory} from "react-router-dom"
 import {useState, useEffect} from 'react'
 
+
 function Home(){
     const {push} = useHistory()
     const [count1, setCount1] = useState(0)
