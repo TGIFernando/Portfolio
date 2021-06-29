@@ -14,7 +14,7 @@ function Projects() {
     "Fernando Chavez created all the connectivity from the front end to the back end using redux for the state management, all sign in pages and all API calls, I also helped with the front end design.";
   const e4 =
     "Fernando Chavez created everything on this app(except the api). The app makes an api call to find the lyrics and I made a loading indicator and other special case indicators.";
-  const l1 = "https://med-cabinet-tgif.netlify.app/";
+  const l1 = "https://tricktionary.monster/";
   const l2 = "https://secret-family-recipes-tt-18.maustrauk.vercel.app/";
   const l3 = "https://frontend-olive-nine.vercel.app/";
   const l4 = "https://tgiflyricfinder.netlify.app/";
