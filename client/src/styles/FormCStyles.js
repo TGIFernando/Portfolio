@@ -6,10 +6,13 @@ const MainForm = styled.form`
   align-items: center;
   flex-direction: column;
   background-color: #327c7c;
-  height: 90vh;
+  /* height: 90vh; */
   width: 85vw;
   padding: 1rem;
   border-radius: 20px;
+  @media (min-width: 1000px) {
+    width: 65vw;
+  }
 `;
 
 const DIV = styled.div`
@@ -32,6 +35,7 @@ const P = styled.p`
 const Label = styled.label`
   font-size: 2rem;
   text-align: center;
+  padding: 0.5rem 0;
 `;
 
 const Input = styled.input`
@@ -40,6 +44,9 @@ const Input = styled.input`
   height: 2.5rem;
   border-color: #177e89;
   border-style: none;
+  @media (min-width: 1000px) {
+    width: 50vw;
+  }
 `;
 
 const Text = styled.textarea`
@@ -47,12 +54,19 @@ const Text = styled.textarea`
   height: 6rem;
   border-radius: 5px;
   border-style: none;
+  @media (min-width: 1000px) {
+    width: 50vw;
+  }
 `;
 
 const Button = styled.input`
   width: 30vw;
   height: 2.5rem;
   border-radius: 5px;
+  margin: 0.5rem 0;
+  @media (min-width: 1000px) {
+    width: 15vw;
+  }
 `;
 
 const PopUpDiv = styled.div`

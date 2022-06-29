@@ -60,9 +60,10 @@ function NavBar({ open, logg, setOpen }) {
           <a href="#contact">Contact</a>
         </LI>
         <LI onClick={onClick}>
-          <Link to="/Resume.PDF" target="_blank" download>
+          {/* <Link to="/Resume.PDF" target="_blank" download>
             Download Resume
-          </Link>
+          </Link> */}
+          <a href="#resume">Resume</a>
         </LI>
         {logg ? (
           <LI onClick={onClick}>
