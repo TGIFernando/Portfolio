@@ -9,7 +9,7 @@ import Projects from "./components/projects";
 import Contact from "./components/contact/contact";
 import Login from "./components/login";
 import View from "./components/contact/viewContact";
-import Resume from "./components/resume/resume";
+// import Resume from "./components/resume/resume";
 
 function App() {
   const [logg, setLogg] = useState(false);

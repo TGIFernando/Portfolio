@@ -1,31 +1,31 @@
 import { MainDiv, Proj, FlexyDiv } from "../styles/ProjectsStyles";
 import ProjectContainer from "./projectContainer";
 import image from "./../projPic/TRICK.png";
-import image2 from "./../projPic/SFR.png";
+import image2 from "./../projPic/mark.png";
 import image3 from "./../projPic/SIC.png";
-import image4 from "./../projPic/SLF.png";
+import image4 from "./../projPic/shame.png";
 
 function Projects() {
   const e1 =
     "Fernando Chavez helped with the accessibility of the site and with essential game functions such as the timer displaying the correct time to all of the players in the lobby.";
   const e2 =
-    "Fernando Chavez made the entire back end, including login, register, adding a new recipe, viewing recipes, deleting and editing recipes.";
+    "Fernando Chavez is currently the social media manager for Mark and Monica's Family Pizza. If you would like to see more work check out the mark and monica's instagram";
   const e3 =
     "Fernando Chavez created all the connectivity from the front end to the back end using redux for the state management, all sign in pages and all API calls, I also helped with the front end design.";
   const e4 =
-    "Fernando Chavez created everything on this app(except the api). The app makes an api call to find the lyrics and I made a loading indicator and other special case indicators.";
+    "Fernando Chavez helped with the main layout of the site, helped set up POS and other things like Google Analytics. Currently making custom UI for them.";
   const l1 = "https://tricktionary.monster/";
-  const l2 = "https://secret-family-recipes-tt-18.maustrauk.vercel.app/";
+  const l2 = "http://www.markandmonicaspizza.com/";
   const l3 = "https://frontend-olive-nine.vercel.app/";
-  const l4 = "https://tgiflyricfinder.netlify.app/";
+  const l4 = "https://shamelessbidets.com/";
   return (
     <MainDiv className="aboutMain" id="projects">
       <Proj className="proj snap">Projects</Proj>
       <FlexyDiv>
-        <ProjectContainer link={l1} explain={e1} image={image} />
         <ProjectContainer link={l2} explain={e2} image={image2} />
-        <ProjectContainer link={l3} explain={e3} image={image3} />
         <ProjectContainer link={l4} explain={e4} image={image4} />
+        <ProjectContainer link={l1} explain={e1} image={image} />
+        <ProjectContainer link={l3} explain={e3} image={image3} />
       </FlexyDiv>
     </MainDiv>
   );
