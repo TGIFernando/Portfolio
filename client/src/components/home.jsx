@@ -14,12 +14,21 @@ import { useState, useEffect } from "react";
 function Home() {
   const { push } = useHistory();
   const [count1, setCount1] = useState(0);
+
+  const [hover, setHover] = useState(false);
+
   const onClick1 = () => {
     setCount1(count1 + 1);
   };
+
   const [count2, setCount2] = useState(0);
+
   const onClick2 = () => {
     setCount2(count2 + 1);
+  };
+
+  const onClick3 = () => {
+    setHover(!hover);
   };
 
   useEffect(() => {
@@ -43,13 +52,17 @@ function Home() {
       </Name>
       <Stack>
         A Full Stack Web Developer
-        <Star>*</Star>
-        <Hstar className="Hstar">
-          <h3 className="Hstar">
-            Front and Backend developer, Video/Photo Editor, Media Manager,
-            Social Media strategist, Consultant, and so much more.
-          </h3>
-        </Hstar>
+        <Star onClick={onClick3}>*</Star>
+        {hover ? (
+          <Hstar className="Hstar">
+            <h3 className="Hstar">
+              Front and Backend developer, Video/Photo Editor, Media Manager,
+              Social Media strategist, Consultant, and so much more.
+            </h3>
+          </Hstar>
+        ) : (
+          <></>
+        )}
       </Stack>
       <Button>
         <A href="#contact">Contact Me</A>

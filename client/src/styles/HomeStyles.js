@@ -63,7 +63,7 @@ const Hstar = styled.div`
   left: 71%;
   bottom: 27%;
   opacity: 80%;
-  visibility: hidden;
+  /* visibility: hidden; */
 `;
 
 const Star = styled.span`
