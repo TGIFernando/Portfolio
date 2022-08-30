@@ -64,6 +64,13 @@ const Hstar = styled.div`
   bottom: 27%;
   opacity: 80%;
   /* visibility: hidden; */
+  @media (max-width: 768px) {
+    left: 25%;
+    bottom: 31.5%;
+    font-size: 1.5rem;
+    height: 15rem;
+    padding: 0 1rem;
+  }
 `;
 
 const Star = styled.span`
